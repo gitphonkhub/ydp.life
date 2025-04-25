@@ -97,7 +97,7 @@ a:focus {
 
 a:hover,
 a:focus {
-  color: initial;
+  color: black;
 }
 
 .btn,
