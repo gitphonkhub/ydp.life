@@ -7,8 +7,8 @@ body {
 }
 .footer-section {
     font-size: 30px;
-  background-color: #ec2028; /* Custom color */
-  color: black; !important; /* Text color */
+  background-color: 000000; /* Custom color */
+  color: white; !important; /* Text color */
   text-align: center; !important;
   padding: 20px; /* Some padding around the text */
 }
