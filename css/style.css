@@ -1,10 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+/* Link to Ubuntu Mono Font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+/* Apply Ubuntu Mono font globally */
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #0c0c0c;
-  background-color: #ffffff;
-  overflow-x: hidden;
+    font-family: 'Ubuntu Mono', monospace;
 }
+
+/* Example for specific elements (optional) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+p {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
 /* Apply Ubuntu Mono to Font Awesome icons */
 .fa, .fa-icon, .fa-solid, .fa-regular, .fa-brands {
     font-family: 'Ubuntu Mono', monospace !important;
