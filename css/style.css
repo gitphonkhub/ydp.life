@@ -5,6 +5,13 @@
 body {
     font-family: 'Ubuntu Mono', monospace;
 }
+.footer-section {
+  background-color: #666666; /* Custom color */
+  color: white; /* Text color */
+  text-align: center;
+  padding: 20px; /* Some padding around the text */
+}
+
 
 /* Example for specific elements (optional) */
 h1, h2, h3, h4, h5, h6 {
