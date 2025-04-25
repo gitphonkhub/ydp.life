@@ -6,10 +6,11 @@ body {
     font-family: 'Ubuntu Mono', monospace;
 }
 .footer-section {
+    font-size: 30px;
   background-color: #ec2028; /* Custom color */
   color: white; !important; /* Text color */
   text-align: center; !important;
-  padding: 35px; /* Some padding around the text */
+  padding: 20px; /* Some padding around the text */
 }
 
 
