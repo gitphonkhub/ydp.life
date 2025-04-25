@@ -5,6 +5,11 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
+/* Apply Ubuntu Mono to Font Awesome icons */
+.fa, .fa-icon, .fa-solid, .fa-regular, .fa-brands {
+    font-family: 'Ubuntu Mono', monospace !important;
+}
+
 
 .layout_padding {
   padding: 90px 0;
