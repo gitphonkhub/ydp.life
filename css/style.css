@@ -16,10 +16,12 @@ body {
 /* Example for specific elements (optional) */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu Mono', monospace;
+    color: black; !important;
 }
 
 p {
     font-family: 'Ubuntu Mono', monospace;
+    color: black; !important;
 }
 
 /* Apply Ubuntu Mono to Font Awesome icons */
