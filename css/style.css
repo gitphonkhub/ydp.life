@@ -8,7 +8,7 @@ body {
 .footer-section {
     font-size: 30px;
   background-color: #000000; /* Custom color */
-  color: white; !important; /* Text color */
+  color: #FFFFFF; !important; /* Text color */
   text-align: center; !important;
   padding: 20px; /* Some padding around the text */
 }
