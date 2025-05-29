@@ -1,17 +1,7 @@
-/* Link to Ubuntu Mono Font */
+/* Import Ubuntu Mono Font */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-/* Apply Ubuntu Mono font globally */
-body {
-    font-family: 'Ubuntu Mono', monospace;
-}
-.footer-section {
-    font-size: 30px;
-  background-color: #000000; /* Custom color */
-  color: #FFFFFF; !important; /* Text color */
-  text-align: center; !important;
-  padding: 20px; /* Some padding around the text */
-}
+/* Global Reset and Font */
 * {
     margin: 0;
     padding: 0;
@@ -21,15 +11,25 @@ body {
 body {
     min-height: 100vh;
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
+    justify-content: flex-end; /* Align cube to right */
     align-items: center;
     background-color: #242424;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-family: 'Ubuntu Mono', monospace;
     perspective: 1000px;
-    padding-right: 50px; /* Space from right edge */
+    padding-right: 50px;
 }
 
+/* Footer */
+.footer-section {
+    font-size: 30px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Cube Container */
 .container {
     display: flex;
     justify-content: center;
@@ -37,6 +37,7 @@ body {
     transform-style: preserve-3d;
 }
 
+/* Cube Box */
 .box-card {
     width: 200px;
     height: 200px;
@@ -50,6 +51,7 @@ body {
     animation: rotate3d 8s infinite linear;
 }
 
+/* Cube Face Styles */
 .face {
     position: absolute;
     width: 100%;
@@ -67,6 +69,7 @@ body {
     overflow: hidden;
 }
 
+/* Shine Effects */
 .face::before {
     content: '';
     position: absolute;
@@ -102,6 +105,7 @@ body {
     opacity: 1;
 }
 
+/* Cube Face Transformations */
 .front {
     transform: translateZ(100px);
     border-color: #646cff;
@@ -132,6 +136,7 @@ body {
     border-color: #9c27b0;
 }
 
+/* Cube Rotation Animation */
 @keyframes rotate3d {
     0% {
         transform: rotateX(0) rotateY(0);
@@ -150,6 +155,7 @@ body {
     }
 }
 
+/* Responsive Cube */
 @media (max-width: 768px) {
     .box-card {
         width: 150px;
@@ -163,6 +169,7 @@ body {
     .top { transform: translateY(-75px) rotateX(90deg); }
     .bottom { transform: translateY(75px) rotateX(-90deg); }
 }
+
 
 
 
