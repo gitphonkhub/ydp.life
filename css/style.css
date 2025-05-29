@@ -1,5 +1,16 @@
 /* Link to Ubuntu Mono Font */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+.mona-hover {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 400;
+  transition: font-variation-settings 0.3s ease;
+}
+
+.mona-hover:hover {
+  font-variation-settings: 'wght' 700;
+}
+
 
 /* Apply Ubuntu Mono font globally */
 body {
@@ -74,13 +85,30 @@ p {
 
 .heading_container h2 {
   position: relative;
-  font-weight: bold;
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 400;
   margin-bottom: 0;
+  transition: font-variation-settings 0.3s ease;
 }
 
-.heading_container h2 span {
-  color: #00bbf0;
+.heading_container h2:hover {
+  font-variation-settings: 'wght' 700;
 }
+
+
+.heading_container h2 span {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 400;
+  color: #00bbf0;
+  transition: font-variation-settings 0.3s ease;
+}
+
+.heading_container h2 span:hover {
+  font-variation-settings: 'wght' 700;
+}
+
 
 .heading_container p {
   margin-top: 10px;
@@ -306,12 +334,20 @@ a:focus {
 }
 
 .slider_section .detail-box h1 {
+  font-family: 'Mona Sans', sans-serif;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 400;
+  font-variation-settings: 'wght' 400;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #FFFFFF;
+  transition: font-variation-settings 0.3s ease;
 }
+
+.slider_section .detail-box h1:hover {
+  font-variation-settings: 'wght' 700;
+}
+
 
 .slider_section .detail-box p {
   color: #FFFFFF;
@@ -473,9 +509,17 @@ a:focus {
 }
 
 .service_section .box .detail-box h5 {
-  font-weight: bold;
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 600;
   text-transform: uppercase;
+  transition: font-variation-settings 0.3s ease;
 }
+
+.service_section .box .detail-box h5:hover {
+  font-variation-settings: 'wght' 800;
+}
+
 
 .service_section .box .detail-box a {
   color: #00204a;
@@ -531,8 +575,16 @@ a:focus {
 }
 
 .about_section .detail-box h3 {
-  font-weight: bold;
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 400;
+  transition: font-variation-settings 0.3s ease;
 }
+
+.about_section .detail-box h3:hover {
+  font-variation-settings: 'wght' 700;
+}
+
 
 .about_section .detail-box p {
   margin-top: 15px;
@@ -595,9 +647,17 @@ a:focus {
 }
 
 .why_section .box h5 {
-  font-weight: bold;
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 600;
   margin-bottom: 10px;
+  transition: font-variation-settings 0.3s ease;
 }
+
+.why_section .box h5:hover {
+  font-variation-settings: 'wght' 800;
+}
+
 
 .why_section .box p {
   margin-bottom: 0;
@@ -679,10 +739,18 @@ a:focus {
 }
 
 .team_section .team_container .box .detail-box h5 {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 600;
   color: #00bbf0;
-  font-weight: 600;
   position: relative;
+  transition: font-variation-settings 0.3s ease;
 }
+
+.team_section .team_container .box .detail-box h5:hover {
+  font-variation-settings: 'wght' 800;
+}
+
 
 .team_section .team_container .box .social_box {
   padding: 10px 45px 20px 45px;
@@ -751,9 +819,17 @@ a:focus {
 }
 
 .client_section .box .client_id .client_info h6 {
-  font-weight: 600;
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 600;
   margin-bottom: 5px;
+  transition: font-variation-settings 0.3s ease;
 }
+
+.client_section .box .client_id .client_info h6:hover {
+  font-variation-settings: 'wght' 800;
+}
+
 
 .client_section .box .client_id .client_info p {
   margin-bottom: 0;
@@ -810,9 +886,17 @@ a:focus {
 }
 
 .info_section h4 {
-  font-weight: 600;
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 600; /* Starts at weight 600 */
   margin-bottom: 20px;
+  transition: font-variation-settings 0.3s ease;
 }
+
+.info_section h4:hover {
+  font-variation-settings: 'wght' 800; /* Increases on hover */
+}
+
 
 .info_section .info_col {
   margin-bottom: 30px;
