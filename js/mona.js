@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const letterCenterX = letterRect.left + letterRect.width / 2;
 
       const distance = Math.abs(mouseX - letterCenterX);
-      const maxDistance = 30;
+      const maxDistance = 5;
       let weight = 700 - (distance / maxDistance) * 300;
 
       if (weight < 400) weight = 400;
