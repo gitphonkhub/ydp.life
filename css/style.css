@@ -12,8 +12,8 @@
 }
 .mona-text {
   font-family: 'Mona Sans', sans-serif;
-  font-weight: 30;
-  font-variation-settings: 'wght' 30;
+  font-weight: 400;
+  font-variation-settings: 'wght' 400;
   font-size: 3rem;
   display: flex;
   flex-wrap: wrap;
