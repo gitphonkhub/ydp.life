@@ -89,7 +89,7 @@ p {
   font-weight: 400;
   font-variation-settings: 'wght' 400;
   margin-bottom: 0;
-  color: #00bbf0; /* start blue */
+  color: #4b0082; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -104,7 +104,7 @@ p {
   font-family: 'Mona Sans', sans-serif;
   font-weight: 400;
   font-variation-settings: 'wght' 400;
-  color: #00bbf0; /* start blue */
+  color: #4b0082; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -230,7 +230,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #00bbf0;
+  color: #4b0082;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -246,7 +246,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #00bbf0;
+  color: #4b0082;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -345,7 +345,7 @@ a:focus {
   font-variation-settings: 'wght' 400;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #00bbf0; /* start blue */
+  color: #4b0082; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -467,7 +467,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #00bbf0;
+  background-color: #4b0082;
 }
 
 .service_section {
@@ -520,7 +520,7 @@ a:focus {
   font-weight: 400;
   font-variation-settings: 'wght' 600;
   text-transform: uppercase;
-  color: #00bbf0; /* start blue */
+  color: #4b0082; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -537,7 +537,7 @@ a:focus {
 }
 
 .service_section .box .detail-box a:hover {
-  color: #00bbf0;
+  color: #4b0082;
 }
 
 .service_section .btn-box {
@@ -553,7 +553,7 @@ a:focus {
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #4b0082;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -588,7 +588,7 @@ a:focus {
   font-family: 'Mona Sans', sans-serif;
   font-weight: 400;
   font-variation-settings: 'wght' 400;
-  color: #00bbf0; /* start blue */
+  color: #4b0082; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -606,7 +606,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #4b0082;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
@@ -689,7 +689,7 @@ a:focus {
 .why_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #4b0082;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -755,7 +755,7 @@ a:focus {
   font-family: 'Mona Sans', sans-serif;
   font-weight: 400;
   font-variation-settings: 'wght' 600;
-  color: #00bbf0;
+  color: #4b0082;
   position: relative;
   transition: font-variation-settings 0.3s ease;
 }
@@ -781,7 +781,7 @@ a:focus {
 }
 
 .team_section .team_container .box .social_box a:hover {
-  color: #00bbf0;
+  color: #4b0082;
 }
 
 /*team section end*/
@@ -836,7 +836,7 @@ a:focus {
   font-weight: 400;
   font-variation-settings: 'wght' 600;
   margin-bottom: 5px;
-  color: #00bbf0; /* start blue */
+  color: #4b0082; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -906,7 +906,7 @@ a:focus {
   font-weight: 400;
   font-variation-settings: 'wght' 600; /* Starts at weight 600 */
   margin-bottom: 20px;
-  color: #00bbf0; /* start blue */
+  color: #4b0082; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -941,7 +941,7 @@ a:focus {
 }
 
 .info_section .info_contact .contact_link_box a:hover {
-  color: #00bbf0;
+  color: #4b0082;
 }
 
 .info_section .info_social {
@@ -969,7 +969,7 @@ a:focus {
 }
 
 .info_section .info_social a:hover {
-  color: #00bbf0;
+  color: #4b0082;
 }
 
 .info_section .info_links {
@@ -996,7 +996,7 @@ a:focus {
 }
 
 .info_section .info_links a:hover {
-  color: #00bbf0;
+  color: #4b0082;
 }
 
 .info_section form input {
@@ -1030,7 +1030,7 @@ a:focus {
   text-align: center;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #00bbf0;
+  background-color: #4b0082;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
