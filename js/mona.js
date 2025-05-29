@@ -1,38 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const heading = document.querySelector('.mona-effect');
+document.addEventListener("mousemove", (e) => {
+  const chars = document.querySelectorAll(".mona-text span");
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
 
-  if (!heading) return;
+  chars.forEach((char) => {
+    const rect = char.getBoundingClientRect();
+    const charX = rect.left + rect.width / 2;
+    const charY = rect.top + rect.height / 2;
 
-  // Wrap each character in a <span>
-  heading.innerHTML = heading.textContent
-    .split('')
-    .map(char => `<span>${char}</span>`)
-    .join('');
+    const dist = Math.hypot(mouseX - charX, mouseY - charY);
+    const maxDist = 100; // adjust this for sensitivity
 
-  const letters = heading.querySelectorAll('span');
+    // Weight mapping
+    const minWeight = 30;
+    const maxWeight = 900;
+    const mapped = Math.max(minWeight, maxWeight - dist * 8);
 
-  heading.addEventListener('mousemove', e => {
-    const rect = heading.getBoundingClientRect();
-    const mouseX = e.clientX;
-
-    letters.forEach(letter => {
-      const letterRect = letter.getBoundingClientRect();
-      const letterCenterX = letterRect.left + letterRect.width / 2;
-
-      const distance = Math.abs(mouseX - letterCenterX);
-      const maxDistance = 5;
-      let weight = 700 - (distance / maxDistance) * 300;
-
-      if (weight < 400) weight = 400;
-      if (weight > 700) weight = 700;
-
-      letter.style.fontVariationSettings = `'wght' ${weight.toFixed(0)}`;
-    });
-  });
-
-  heading.addEventListener('mouseleave', () => {
-    letters.forEach(letter => {
-      letter.style.fontVariationSettings = `'wght' 400`;
-    });
+    char.style.fontVariationSettings = `'wght' ${mapped}`;
   });
 });
