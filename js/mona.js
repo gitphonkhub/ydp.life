@@ -1,21 +1,71 @@
-document.addEventListener("mousemove", (e) => {
-  const chars = document.querySelectorAll(".mona-text span");
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
+@import url("https://fonts.cdnfonts.com/css/mona-sans");
 
-  chars.forEach((char) => {
-    const rect = char.getBoundingClientRect();
-    const charX = rect.left + rect.width / 2;
-    const charY = rect.top + rect.height / 2;
+:root {
+  --add: 0;
+}
 
-    const dist = Math.hypot(mouseX - charX, mouseY - charY);
-    const maxDist = 100; // adjust this for sensitivity
+body {
+  font-family: "mona-sans";
+  font-feature-settings: unset;
+  margin: 0;
+}
 
-    // Weight mapping
-    const minWeight = 30;
-    const maxWeight = 900;
-    const mapped = Math.max(minWeight, maxWeight - dist * 8);
+html,
+body,
+#root {
+  height: 100%;
+}
 
-    char.style.fontVariationSettings = `'wght' ${mapped}`;
-  });
-});
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.x {
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+
+  position: relative;
+  display: inline-block;
+  font-weight: calc(200 + 700 * var(--add));
+  font-stretch: calc(100% + 25% * var(--add));
+  color: hsl(240deg, 0, calc(85% + 15% * var(--add)));
+  transition: transform 0.2s, color 0.2s, font-stretch 0.2s, font-weight 0.2s;
+}
+
+.x-0 {
+  --add: 1;
+}
+.x-1 {
+  --add: 0.7;
+}
+.x-2 {
+  --add: 0.45;
+}
+.x-3 {
+  --add: 0.2;
+}
+
+.hover:hover {
+  --add: 1;
+}
+
+.hover:hover + .hover,
+.hover:has(+ .hover:hover) {
+  --add: 0.7;
+}
+
+.hover:hover + .hover + .hover,
+.hover:has(+ .hover + .hover:hover) {
+  --add: 0.45;
+}
+
+.hover:hover + .hover + .hover + .hover,
+.hover:has(+ .hover + .hover + .hover:hover) {
+  --add: 0.2;
+}
