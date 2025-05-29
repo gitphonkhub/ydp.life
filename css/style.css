@@ -58,8 +58,8 @@ body:hover li {
 
 
 p {
-    font-family: 'Ubuntu Mono', monospace;
-    color: white; !important;
+    font-family: 'Mona Sans', sans-serif;
+    color: white !important;
 }
 
 /* Apply Ubuntu Mono to Font Awesome icons */
