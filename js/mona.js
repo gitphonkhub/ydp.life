@@ -1,71 +1,64 @@
-@import url("https://fonts.cdnfonts.com/css/mona-sans");
+import React from "https://esm.sh/react@18.2.0";
+import ReactDOM from "https://esm.sh/react-dom@18.2.0";
 
-:root {
-  --add: 0;
-}
+const NUM = 5;
 
-body {
-  font-family: "mona-sans";
-  font-feature-settings: unset;
-  margin: 0;
-}
+function App() {
+  const string = "Infinite possibilities";
+  const [count, setCount] = React.useState(NUM * -1);
 
-html,
-body,
-#root {
-  height: 100%;
-}
+  useInterval(() => {
+    setCount((p) => {
+      if (p >= string.length - 1 + NUM) {
+        return NUM * -1;
+      }
+      return p + 1;
+    });
+  }, 60);
 
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-}
+  const getPosition = (count, index) => {
+    if (count === index) return "x-0";
+    if (count === index - 1 || count === index + 1) return "x-1";
+    if (count === index - 2 || count === index + 2) return "x-2";
+    if (count === index - 3 || count === index + 3) return "x-3";
+    return "";
+  };
 
-.x {
-  font-size: 48px;
-  line-height: 52px;
-  letter-spacing: -0.03em;
-
-  position: relative;
-  display: inline-block;
-  font-weight: calc(200 + 700 * var(--add));
-  font-stretch: calc(100% + 25% * var(--add));
-  color: hsl(240deg, 0, calc(85% + 15% * var(--add)));
-  transition: transform 0.2s, color 0.2s, font-stretch 0.2s, font-weight 0.2s;
-}
-
-.x-0 {
-  --add: 1;
-}
-.x-1 {
-  --add: 0.7;
-}
-.x-2 {
-  --add: 0.45;
-}
-.x-3 {
-  --add: 0.2;
+  return (
+    <div className="container">
+      <div>
+        {string.split("").map((letter, index) => (
+          <div className={`${getPosition(count, index)} x`}>
+            {letter === " " ? "\u00A0" : letter}
+          </div>
+        ))}
+      </div>
+      <div>
+        {"https://github.com/mona-sans".split("").map((letter, index) => (
+          <div className={`x hover`}>{letter === " " ? "\u00A0" : letter}</div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-.hover:hover {
-  --add: 1;
+function useInterval(callback, delay) {
+  const savedCallback = React.useRef(null);
+
+  React.useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  React.useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+    if (delay !== null) {
+      let id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+  }, [delay]);
 }
 
-.hover:hover + .hover,
-.hover:has(+ .hover:hover) {
-  --add: 0.7;
-}
+ReactDOM.render(<App />, document.getElementById("root"));
 
-.hover:hover + .hover + .hover,
-.hover:has(+ .hover + .hover:hover) {
-  --add: 0.45;
-}
-
-.hover:hover + .hover + .hover + .hover,
-.hover:has(+ .hover + .hover + .hover:hover) {
-  --add: 0.2;
-}
