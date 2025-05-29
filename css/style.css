@@ -35,7 +35,7 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li {
   font-family: 'Mona Sans', sans-serif;
   font-weight: 400;
   font-variation-settings: 'wght' 400;
-  color: #4b0082; /* initial blue color */
+  color: #623be3; /* initial blue color */
   transition: font-variation-settings 0.3s ease, color 0.3s ease;
   cursor: default;
 }
@@ -111,7 +111,7 @@ p {
   font-weight: 400;
   font-variation-settings: 'wght' 400;
   margin-bottom: 0;
-  color: #4b0082; /* start blue */
+  color: #623be3; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -126,7 +126,7 @@ p {
   font-family: 'Mona Sans', sans-serif;
   font-weight: 400;
   font-variation-settings: 'wght' 400;
-  color: #4b0082; /* start blue */
+  color: #623be3; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -367,7 +367,7 @@ a:focus {
   font-variation-settings: 'wght' 400;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #4b0082; /* start blue */
+  color: #623be3; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -542,7 +542,7 @@ a:focus {
   font-weight: 400;
   font-variation-settings: 'wght' 600;
   text-transform: uppercase;
-  color: #4b0082; /* start blue */
+  color: #623be3; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -610,7 +610,7 @@ a:focus {
   font-family: 'Mona Sans', sans-serif;
   font-weight: 400;
   font-variation-settings: 'wght' 400;
-  color: #4b0082; /* start blue */
+  color: #623be3; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -858,7 +858,7 @@ a:focus {
   font-weight: 400;
   font-variation-settings: 'wght' 600;
   margin-bottom: 5px;
-  color: #4b0082; /* start blue */
+  color: #623be3; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
@@ -928,7 +928,7 @@ a:focus {
   font-weight: 400;
   font-variation-settings: 'wght' 600; /* Starts at weight 600 */
   margin-bottom: 20px;
-  color: #4b0082; /* start blue */
+  color: #623be3; /* start blue */
   transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
 
