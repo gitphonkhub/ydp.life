@@ -30,10 +30,32 @@ body {
 
 
 /* Example for specific elements (optional) */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu Mono', monospace;
-    color: white; !important;
+/* Apply Mona Sans font globally */
+body, p, h1, h2, h3, h4, h5, h6, span, a, li {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 400;
+  color: #00bbf0; /* initial blue color */
+  transition: font-variation-settings 0.3s ease, color 0.3s ease;
+  cursor: default;
 }
+
+/* Hover effect for all text */
+body:hover p,
+body:hover h1,
+body:hover h2,
+body:hover h3,
+body:hover h4,
+body:hover h5,
+body:hover h6,
+body:hover span,
+body:hover a,
+body:hover li {
+  font-variation-settings: 'wght' 700;
+  color: #ffffff; /* white on hover */
+  cursor: pointer; /* show pointer cursor on hover */
+}
+
 
 p {
     font-family: 'Ubuntu Mono', monospace;
