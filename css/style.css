@@ -4,6 +4,10 @@
 /* Apply Ubuntu Mono font globally */
 body {
     font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #242424;
+    color: #fff;
 }
 .footer-section {
     font-size: 30px;
