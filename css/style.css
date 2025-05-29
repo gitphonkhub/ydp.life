@@ -35,7 +35,7 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li {
   font-family: 'Mona Sans', sans-serif;
   font-weight: 400;
   font-variation-settings: 'wght' 400;
-  color: #00bbf0; /* initial blue color */
+  color: #4b0082; /* initial blue color */
   transition: font-variation-settings 0.3s ease, color 0.3s ease;
   cursor: default;
 }
