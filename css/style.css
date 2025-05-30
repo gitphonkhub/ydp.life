@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 .mona-hover {
   font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 400;
+  font-weight: 30;
+  font-variation-settings: 'wght' 30;
   transition: font-variation-settings 0.3s ease;
 }
 
@@ -12,8 +12,8 @@
 }
 .mona-text {
   font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 400;
+  font-weight: 30;
+  font-variation-settings: 'wght' 30;
   font-size: 3rem;
   display: flex;
   flex-wrap: wrap;
