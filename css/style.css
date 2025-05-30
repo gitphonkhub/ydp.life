@@ -1,40 +1,9 @@
 /* Link to Ubuntu Mono Font */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-.mona-hover {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 30;
-  font-variation-settings: 'wght' 30;
-  transition: font-variation-settings 0.3s ease;
-}
-
-.mona-hover:hover {
-  font-variation-settings: 'wght' 10;
-}
-.mona-text {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 30;
-  font-variation-settings: 'wght' 30;
-  font-size: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1px;
-  color: white;
-}
-
-.mona-text span {
-  transition: font-variation-settings 0.2s ease;
-  display: inline-block;
-}
-
-
 
 /* Apply Ubuntu Mono font globally */
 body {
-    font-family: 'Mona Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #242424;
-    color: #fff;
+    font-family: 'Ubuntu Mono', monospace;
 }
 .footer-section {
     font-size: 30px;
@@ -46,36 +15,14 @@ body {
 
 
 /* Example for specific elements (optional) */
-/* Apply Mona Sans font globally */
-body, p, h1, h2, h3, h4, h5, h6, span, a, li {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 30;
-  font-variation-settings: 'wght' 30;
-  color: #b7b7f9; /* initial blue color */
-  transition: font-variation-settings 0.3s ease, color 0.3s ease;
-  cursor: default;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu Mono', monospace;
+    color: white; !important;
 }
-
-/* Hover effect for all text */
-body:hover p,
-body:hover h1,
-body:hover h2,
-body:hover h3,
-body:hover h4,
-body:hover h5,
-body:hover h6,
-body:hover span,
-body:hover a,
-body:hover li {
-  font-variation-settings: 'wght' 100;
-  color: #ffffff; /* white on hover */
-  cursor: pointer; /* show pointer cursor on hover */
-}
-
 
 p {
-    font-family: 'Mona Sans', sans-serif;
-    color: white !important;
+    font-family: 'Ubuntu Mono', monospace;
+    color: white; !important;
 }
 
 /* Apply Ubuntu Mono to Font Awesome icons */
@@ -123,35 +70,13 @@ p {
 
 .heading_container h2 {
   position: relative;
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 400;
+  font-weight: bold;
   margin-bottom: 0;
-  color: #623be3; /* start blue */
-  transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
-
-.heading_container h2:hover {
-  font-variation-settings: 'wght' 700; /* bolder */
-  color: #ffffff; /* change to white */
-}
-
-
 
 .heading_container h2 span {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 400;
-  color: #623be3; /* start blue */
-  transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
+  color: #00bbf0;
 }
-
-.heading_container h2 span:hover {
-  font-variation-settings: 'wght' 700; /* bolder */
-  color: #ffffff; /* change to white */
-}
-
-
 
 .heading_container p {
   margin-top: 10px;
@@ -216,13 +141,13 @@ a:focus {
 }
 
 .hero_area .hero_bg_box .bg_img_box {
-  min-width: 50%;
-  min-height: 50%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .hero_area .hero_bg_box img {
-  min-width: 50%;
-  min-height: 50%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .sub_page .hero_area {
@@ -268,7 +193,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #4b0082;
+  color: #00bbf0;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -284,7 +209,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #4b0082;
+  color: #00bbf0;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -377,22 +302,12 @@ a:focus {
 }
 
 .slider_section .detail-box h1 {
-  font-family: 'Mona Sans', sans-serif;
   font-size: 3rem;
-  font-weight: 400;
-  font-variation-settings: 'wght' 400;
+  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #623be3; /* start blue */
-  transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
+  color: #FFFFFF;
 }
-
-.slider_section .detail-box h1:hover {
-  font-variation-settings: 'wght' 700; /* bolder */
-  color: #ffffff; /* change to white */
-}
-
-
 
 .slider_section .detail-box p {
   color: #FFFFFF;
@@ -505,7 +420,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #4b0082;
+  background-color: #00bbf0;
 }
 
 .service_section {
@@ -531,15 +446,20 @@ a:focus {
 }
 
 .service_section .box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 80px;      /* smaller width */
-  min-width: 50px;  /* smaller min-width */
-  height: 50px;     /* smaller height */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 125px;
+  min-width: 75px;
+  height: 75px;
   margin-bottom: 15px;
 }
-
 
 .service_section .box .img-box img {
   max-width: 100%;
@@ -549,20 +469,9 @@ a:focus {
 }
 
 .service_section .box .detail-box h5 {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 600;
+  font-weight: bold;
   text-transform: uppercase;
-  color: #623be3; /* start blue */
-  transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
-
-.service_section .box .detail-box h5:hover {
-  font-variation-settings: 'wght' 800;
-  color: #ffffff; /* white on hover */
-}
-
-
 
 .service_section .box .detail-box a {
   color: #00204a;
@@ -570,7 +479,7 @@ a:focus {
 }
 
 .service_section .box .detail-box a:hover {
-  color: #4b0082;
+  color: #00bbf0;
 }
 
 .service_section .btn-box {
@@ -586,7 +495,7 @@ a:focus {
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #4b0082;
+  background-color: #00bbf0;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -618,19 +527,8 @@ a:focus {
 }
 
 .about_section .detail-box h3 {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 400;
-  color: #623be3; /* start blue */
-  transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
+  font-weight: bold;
 }
-
-.about_section .detail-box h3:hover {
-  font-variation-settings: 'wght' 700; /* bolder */
-  color: #ffffff; /* change to white */
-}
-
-
 
 .about_section .detail-box p {
   margin-top: 15px;
@@ -639,7 +537,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #4b0082;
+  background-color: #00bbf0;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
@@ -669,10 +567,10 @@ a:focus {
 
 .why_section .box .img-box {
   margin-bottom: 20px;
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  min-height: 20px;
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
   border-radius: 100%;
   border: 5px solid #00204a;
   display: -webkit-box;
@@ -693,17 +591,9 @@ a:focus {
 }
 
 .why_section .box h5 {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 600;
+  font-weight: bold;
   margin-bottom: 10px;
-  transition: font-variation-settings 0.3s ease;
 }
-
-.why_section .box h5:hover {
-  font-variation-settings: 'wght' 800;
-}
-
 
 .why_section .box p {
   margin-bottom: 0;
@@ -722,7 +612,7 @@ a:focus {
 .why_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #4b0082;
+  background-color: #00bbf0;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -785,18 +675,10 @@ a:focus {
 }
 
 .team_section .team_container .box .detail-box h5 {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 600;
-  color: #4b0082;
+  color: #00bbf0;
+  font-weight: 600;
   position: relative;
-  transition: font-variation-settings 0.3s ease;
 }
-
-.team_section .team_container .box .detail-box h5:hover {
-  font-variation-settings: 'wght' 800;
-}
-
 
 .team_section .team_container .box .social_box {
   padding: 10px 45px 20px 45px;
@@ -814,7 +696,7 @@ a:focus {
 }
 
 .team_section .team_container .box .social_box a:hover {
-  color: #4b0082;
+  color: #00bbf0;
 }
 
 /*team section end*/
@@ -865,20 +747,9 @@ a:focus {
 }
 
 .client_section .box .client_id .client_info h6 {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 600;
+  font-weight: 600;
   margin-bottom: 5px;
-  color: #623be3; /* start blue */
-  transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
-
-.client_section .box .client_id .client_info h6:hover {
-  font-variation-settings: 'wght' 800;
-  color: #ffffff; /* white on hover */
-}
-
-
 
 .client_section .box .client_id .client_info p {
   margin-bottom: 0;
@@ -935,20 +806,9 @@ a:focus {
 }
 
 .info_section h4 {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 400;
-  font-variation-settings: 'wght' 600; /* Starts at weight 600 */
+  font-weight: 600;
   margin-bottom: 20px;
-  color: #623be3; /* start blue */
-  transition: font-variation-settings 0.3s ease, color 0.3s ease; /* animate weight + color */
 }
-
-.info_section h4:hover {
-  font-variation-settings: 'wght' 800; /* heavier on hover */
-  color: #ffffff; /* white on hover */
-}
-
-
 
 .info_section .info_col {
   margin-bottom: 30px;
@@ -974,7 +834,7 @@ a:focus {
 }
 
 .info_section .info_contact .contact_link_box a:hover {
-  color: #4b0082;
+  color: #00bbf0;
 }
 
 .info_section .info_social {
@@ -1002,7 +862,7 @@ a:focus {
 }
 
 .info_section .info_social a:hover {
-  color: #4b0082;
+  color: #00bbf0;
 }
 
 .info_section .info_links {
@@ -1029,7 +889,7 @@ a:focus {
 }
 
 .info_section .info_links a:hover {
-  color: #4b0082;
+  color: #00bbf0;
 }
 
 .info_section form input {
@@ -1063,7 +923,7 @@ a:focus {
   text-align: center;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #4b0082;
+  background-color: #00bbf0;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
