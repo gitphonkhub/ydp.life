@@ -67,7 +67,7 @@ body:hover h6,
 body:hover span,
 body:hover a,
 body:hover li {
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: 'wght' 100;
   color: #ffffff; /* white on hover */
   cursor: pointer; /* show pointer cursor on hover */
 }
