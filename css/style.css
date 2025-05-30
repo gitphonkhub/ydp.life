@@ -448,7 +448,10 @@ a:focus {
 }
 
 .slider_section .img-box img {
-  width: 50%;
+  width: 30%;
+  width: 100px;
+  height: auto;
+  overflow: hidden;
   -webkit-animation: upDown 5s infinite;
           animation: upDown 5s infinite;
 }
