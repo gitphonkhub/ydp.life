@@ -38,6 +38,7 @@ body,
   transition: transform 0.2s, color 0.2s, font-stretch 0.2s, font-weight 0.2s;
 }
 
+/* Animation intensity */
 .x-0 {
   --add: 1;
 }
@@ -51,6 +52,7 @@ body,
   --add: 0.2;
 }
 
+/* Hover ripple effect for letters with .hover */
 .hover:hover {
   --add: 1;
 }
@@ -69,3 +71,10 @@ body,
 .hover:has(+ .hover + .hover + .hover:hover) {
   --add: 0.2;
 }
+
+/* Added to ensure smooth transition on dynamic .hover addition/removal */
+.hover {
+  cursor: default;
+  user-select: none;
+}
+
