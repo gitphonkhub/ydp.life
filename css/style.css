@@ -540,9 +540,9 @@ a:focus {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 125px;
-  min-width: 75px;
-  height: 75px;
+  width: 25px;
+  min-width: 15px;
+  height: 15px;
   margin-bottom: 15px;
 }
 
